@@ -128,6 +128,8 @@ Add this line to your application's Gemfile:
 
     gem 'apn_sender', require: 'apn'
 
+Make sure the line is added below the inclusion of Resque or Sidekiq. Otherwise the respective worker class will not be loaded by Rails.
+
 And then execute:
 
     $ bundle
