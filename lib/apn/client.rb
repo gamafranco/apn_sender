@@ -37,7 +37,7 @@ module APN
     end
 
     def socket
-      @socket ||= setup_socket
+      @socket = setup_socket
     end
 
     private
